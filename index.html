@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr. Brian Nyagaka - Internal Medicine Specialist</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -835,11 +836,11 @@ s ease-out;
 					<img src="https://i.ibb.co/hRbTY8yd/Brian-Nyagaka.jpg" alt="Brian-Nyagaka">
 				</a>
 			</div>
-            <h1>Dr. Brian Nyagaka</h1>
+            <h1>Dr./RCO Brian Nyagaka</h1>
             <p class="subtitle">Internal Medicine Specialist</p>
-            <p class="description">Dedicated to providing exceptional patient care through evidence-based medicine, compassionate treatment, and comprehensive healthcare solutions in Kisumu, Kenya.</p>
+            <p class="description">Dedicated to providing exceptional patient care through evidence-based medicine, compassionate treatment, and comprehensive healthcare solutions in Nairobi, Kenya.</p>
             <div class="cta-buttons">
-                <a href="https://drgalen.org/book-appointment/mr-brian-nyagaka-kisumu-4132" class="btn btn-primary" target="_blank">Book Consultation</a>
+                <a href="https://drgalen.org/online-doctor/mr-brian-nyagaka-kisumu-4132" class="btn btn-primary" target="_blank">Book Consultation</a>
                 <a href="#about" class="btn btn-secondary">Learn More</a>
             </div>
         </div>
@@ -1078,7 +1079,7 @@ s ease-out;
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email">
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
@@ -1111,16 +1112,18 @@ s ease-out;
     <footer class="footer">
         <div class="container">
             <div class="social-links">
-                <a href="#" aria-label="LinkedIn">💼</a>
-                <a href="#" aria-label="Twitter">🐦</a>
-                <a href="#" aria-label="Facebook">📘</a>
-                <a href="#" aria-label="Instagram">📷</a>
-            </div>
-            <p>&copy; 2025 Brian Nyagaka, Clinical Officer. All rights reserved. Licensed Medical Professional.</p>
+				<a href="#" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<a href="#" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="#" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://wa.me/254722449453" aria-label="Whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+			</div>
+            <p>&copy; <span id="year"></span> Brian Nyagaka, Clinical Officer. All rights reserved. Licensed Medical Professional.</p>
         </div>
     </footer>
 
     <script>
+		document.getElementById("year").textContent = new Date().getFullYear();
         // Mobile Navigation Toggle
         const mobileToggle = document.getElementById('mobile-toggle');
         const navMenu = document.getElementById('nav-menu');
