@@ -119,20 +119,28 @@
         }
 
         .hero-avatar {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            margin: 0 auto 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            font-weight: bold;
-            border: 5px solid rgba(255, 255, 255, 0.3);
-            animation: float 3s ease-in-out infinite;
-        }
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background: rgba(255, 255, 255, 0.2);
+			backdrop-filter: blur(10px);
+			margin: 0 auto 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 4rem;
+			font-weight: bold;
+			border: 5px solid rgba(255, 255, 255, 0.3);
+			animation: float 3s ease-in-out infinite;
+			overflow: hidden; /*  Ensures no image overflow */
+		}
+
+		.hero-avatar img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
@@ -822,10 +830,14 @@ s ease-out;
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <div class="hero-avatar"><a href="https://imgbb.com/"><img src="https://i.ibb.co/hRbTY8yd/Brian-Nyagaka.jpg" alt="Brian-Nyagaka" border="0"></a></div>
+            <div class="hero-avatar">
+				<a href="https://imgbb.com/">
+					<img src="https://i.ibb.co/hRbTY8yd/Brian-Nyagaka.jpg" alt="Brian-Nyagaka">
+				</a>
+			</div>
             <h1>Dr. Brian Nyagaka</h1>
             <p class="subtitle">Internal Medicine Specialist</p>
-            <p class="description">Dedicated to providing exceptional patient care through evidence-based medicine, compassionate treatment, and comprehensive healthcare solutions in Nairobi, Kenya.</p>
+            <p class="description">Dedicated to providing exceptional patient care through evidence-based medicine, compassionate treatment, and comprehensive healthcare solutions in Kisumu, Kenya.</p>
             <div class="cta-buttons">
                 <a href="https://drgalen.org/book-appointment/mr-brian-nyagaka-kisumu-4132" class="btn btn-primary" target="_blank">Book Consultation</a>
                 <a href="#about" class="btn btn-secondary">Learn More</a>
@@ -1291,6 +1303,4 @@ s ease-out;
         });
     </script>
 </body>
-
 </html>
-
